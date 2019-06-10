@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.API", "Serko.Expense.API\Serko.Expense.API.csproj", "{F51D5207-E2CB-4129-8097-8D3DA2836A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.API.Tests", "Serko.Expense.API.Tests\Serko.Expense.API.Tests.csproj", "{FFFC2B5A-EE14-4469-9585-3E12A934EB99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.Contracts", "Serko.Expense.Contracts\Serko.Expense.Contracts.csproj", "{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F51D5207-E2CB-4129-8097-8D3DA2836A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51D5207-E2CB-4129-8097-8D3DA2836A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51D5207-E2CB-4129-8097-8D3DA2836A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51D5207-E2CB-4129-8097-8D3DA2836A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFC2B5A-EE14-4469-9585-3E12A934EB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFC2B5A-EE14-4469-9585-3E12A934EB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFC2B5A-EE14-4469-9585-3E12A934EB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFC2B5A-EE14-4469-9585-3E12A934EB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5158BA-B002-4C4F-A5CD-8C1EC7689196}
+	EndGlobalSection
+EndGlobal
