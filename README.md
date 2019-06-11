@@ -51,6 +51,10 @@ Request <br/>
 Response <br/>
 ![](https://github.com/fayaz93/expense.api/blob/master/Response.png)
 
+Logs <br/>
+located in root folder (Serko.Expense.API) or debug folder in Test
+![](https://github.com/fayaz93/expense.api/blob/master/Logs.png)
+
 **Future**
 * JWT Authentication
 * Key/Token Hashed and Salted
