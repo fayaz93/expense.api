@@ -38,6 +38,7 @@ namespace Serko.Expense.API.Controllers
             response.Request = request;
 
             // Get all XML tags. If no XML tags, return error
+            logger.LogInformation<PaymentController>("Extracting XML tags");
             var tags = await parser.GetXmlTagsAsync(request.RawText);
             if(tags == null || !tags.Any())
             {
@@ -50,6 +51,7 @@ namespace Serko.Expense.API.Controllers
             }
 
             // Find "expense" tag. If no expense, return error
+            logger.LogInformation<PaymentController>("Finding Expense tag");
             var expense = tags.FirstOrDefault(t => t.Length > 9 && t.Substring(0, 9) == Constants.EXPENSE_TAG);
             if (string.IsNullOrWhiteSpace(expense))
             {
@@ -62,6 +64,7 @@ namespace Serko.Expense.API.Controllers
             }
 
             // Validate XML for its format
+            logger.LogInformation<PaymentController>("Validating all XML tags");
             var xmlValidator = await validator.ValidateXmlTags(tags);
             if (!xmlValidator.IsValid)
             {
@@ -74,6 +77,7 @@ namespace Serko.Expense.API.Controllers
             }
 
             // Parse "expense"
+            logger.LogInformation<PaymentController>("Parsing Expense");
             response = await parser.GetExpense(response, expense);
             if (decimal.TryParse(configuration[Configuration.GST], out decimal gst))
             {
