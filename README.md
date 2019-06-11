@@ -11,19 +11,19 @@ The solution is to parse raw text and return the legitimate contract to client
 
 **Assumptions**
 * **Client/Server:** 
-Web Api is hosted in inhouse server
-Client is internal i.e., API is intranet
-Agreed API Key for authentication
+* Web Api is hosted in inhouse server
+* Client is internal i.e., API is intranet
+* Agreed API Key for authentication
 
 * **Input:** 
-Every request should have only one Expense and duplicate xml nodes are not allowed
-Every legitimate request should result in valid response
-Total is valid decimal value
+* Every request should have only one Expense and duplicate xml nodes are not allowed
+* Every legitimate request should result in valid response
+* Total is valid decimal value
 
 * **Output:** 
-GST value
-Decimal rounding to two positions
-Client will check execution result -> status and errors for further analysis
+* GST value
+* Decimal rounding to two positions
+* Client will check execution result -> status and errors for further analysis
 
 
 **Diagrams**
