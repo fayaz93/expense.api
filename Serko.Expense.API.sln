@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.API", "Serko.Expense.API\Serko.Expense.API.csproj", "{F51D5207-E2CB-4129-8097-8D3DA2836A71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Expense.API", "Serko.Expense.API\Serko.Expense.API.csproj", "{F51D5207-E2CB-4129-8097-8D3DA2836A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.API.Tests", "Serko.Expense.API.Tests\Serko.Expense.API.Tests.csproj", "{FFFC2B5A-EE14-4469-9585-3E12A934EB99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Expense.API.Tests", "Serko.Expense.API.Tests\Serko.Expense.API.Tests.csproj", "{FFFC2B5A-EE14-4469-9585-3E12A934EB99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Expense.Contracts", "Serko.Expense.Contracts\Serko.Expense.Contracts.csproj", "{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Expense.Contracts", "Serko.Expense.Contracts\Serko.Expense.Contracts.csproj", "{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Common.Log", "Serko.Common.Log\Serko.Common.Log.csproj", "{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Common.Middleware", "Serko.Common.Middleware\Serko.Common.Middleware.csproj", "{6BD0BB55-836E-46EE-8810-02E7E80F1C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD0BB55-836E-46EE-8810-02E7E80F1C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD0BB55-836E-46EE-8810-02E7E80F1C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD0BB55-836E-46EE-8810-02E7E80F1C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD0BB55-836E-46EE-8810-02E7E80F1C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,7 +14,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Serko.Common.Log\Serko.Common.Log.csproj" />
+    <ProjectReference Include="..\Serko.Common.Middleware\Serko.Common.Middleware.csproj" />
     <ProjectReference Include="..\Serko.Expense.Contracts\Serko.Expense.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

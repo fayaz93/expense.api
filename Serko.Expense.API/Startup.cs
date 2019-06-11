@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Serko.Common.Middleware;
 using Serko.Expense.API.Filters;
 using Serko.Expense.API.Library;
 using Serko.Expense.API.Services;
@@ -42,6 +33,7 @@ namespace Serko.Expense.API
             services.AddScoped<Interfaces.IApiAuthenticationService, ApiAuthenticationService>();
             services.AddScoped<Interfaces.IValidator, Validator>();
             services.AddScoped<Interfaces.IParser, Parser>();
+            services.AddSingleton<Common.Log.ILogger, Common.Log.Logger>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -55,7 +47,17 @@ namespace Serko.Expense.API
                 app.UseHsts();
             }
 
+            app.UseMiddleware<RequestResponseLoggingMiddleware>();
             app.UseMvc();
+
+            //app.Use(async (context, next) =>
+            //{
+            //    var sw = new Stopwatch();
+            //    sw.Start();
+            //    await next.Invoke();
+            //    sw.Stop();
+            //    await context.Response.WriteAsync($"<!-- {sw.ElapsedMilliseconds} ms -->");
+            //});
 
             app.Run(async context =>
             {

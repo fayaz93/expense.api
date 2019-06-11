@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Serko.Expense.API.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Serko.Expense.API.Library;
 using System.Threading.Tasks;
 
 namespace Serko.Expense.API.Services
@@ -19,7 +17,7 @@ namespace Serko.Expense.API.Services
         public async Task<bool> IsValidToken(string apiKey)
         {
             //You can save apiKey in appsettings, database with encryption/hash. Custom logic here.
-            return await Task.Run(() => apiKey == configuration["ApiKey"]);
+            return await Task.Run(() => apiKey == configuration[Configuration.ApiKey]);
         }
     }
 }

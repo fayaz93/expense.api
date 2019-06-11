@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Serko.Expense.Contracts
+﻿namespace Serko.Expense.Contracts
 {
     public class ExpenseRequest
     {
