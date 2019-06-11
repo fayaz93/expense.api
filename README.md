@@ -3,7 +3,7 @@
 The solution is to parse raw text and return the legitimate contract to client
 
 **Key Features**
-* **NextGen Solution:** Developed in Visual Studio 2019 with .Net core 2.1
+* **NextGen Solution:** Developed in Visual Studio 2017 with .Net core 2.1
 * **Pipelines:** Plug and play the middleware.
 * **Extendable:** Future implementations can be added without altering the framework.
 * **Contracts:** Added contracts instead of simple text.
