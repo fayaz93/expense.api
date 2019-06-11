@@ -77,13 +77,13 @@ StyleCopReport.xml
 *.tlh
 *.tmp
 *.tmp_proj
-*.log
 *.vspscc
 *.vssscc
 .builds
 *.pidb
 *.svclog
 *.scc
+Serko.Expense.Api.log
 
 # Chutzpah Test files
 _Chutzpah*

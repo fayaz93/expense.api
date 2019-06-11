@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Expense.API.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Expense.Contracts", "Serko.Expense.Contracts\Serko.Expense.Contracts.csproj", "{DD1FD7DF-185A-4BC5-A3DD-56DC2A87710F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Common.Log", "Serko.Common.Log\Serko.Common.Log.csproj", "{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Common.Log", "Serko.Common.Log\Serko.Common.Log.csproj", "{0D0C6AD0-3698-4CF0-87D5-5ABEDE2D4D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serko.Common.Middleware", "Serko.Common.Middleware\Serko.Common.Middleware.csproj", "{6BD0BB55-836E-46EE-8810-02E7E80F1C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serko.Common.Middleware", "Serko.Common.Middleware\Serko.Common.Middleware.csproj", "{6BD0BB55-836E-46EE-8810-02E7E80F1C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
