@@ -28,17 +28,17 @@ Client will check execution result -> status and errors for further analysis
 
 **Diagrams**
 *Component Interaction 
-![](https://https://github.com/fayaz93/expense.api/blob/master/ComponentInteraction.png)
+![](https://github.com/fayaz93/expense.api/blob/master/ComponentInteraction.png)
 
 *Postman
 Headers
-![](https://https://github.com/fayaz93/expense.api/blob/master/AuthHeader.png)
+![](https://github.com/fayaz93/expense.api/blob/master/AuthHeader.png)
 
 Request
-![](https://https://github.com/fayaz93/expense.api/blob/master/Request.png)
+![](https://github.com/fayaz93/expense.api/blob/master/Request.png)
 
 Response
-![](https://https://github.com/fayaz93/expense.api/blob/master/Response.png)
+![](https://github.com/fayaz93/expense.api/blob/master/Response.png)
 
 **Future**
 * JWT Authentication
